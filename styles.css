@@ -1,0 +1,276 @@
+/* Import fonts */
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap");
+
+/* Rest */
+html,
+body {
+  scroll-behavior: smooth;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  color: whitesmoke;
+}
+
+/* Header */
+header {
+  position: fixed;
+  font-family: "Playfair Display", serif;
+  font-size: 0.6rem;
+  letter-spacing: 0.05rem;
+  text-align: center;
+  width: 100%;
+  height: 50px;
+  line-height: 50px;
+  border-bottom: 2px solid rgba(202, 202, 202, 0.3);
+  z-index: 1000;
+  text-shadow: 1px 1px black;
+  transition: 300ms;
+}
+
+header a {
+  text-decoration: none;
+  color: whitesmoke;
+}
+
+.active {
+  background: rgb(245, 245, 245);
+  color: #222;
+  transition: 300ms;
+}
+
+.header.active a {
+  color: #222;
+}
+
+.hero::before {
+  background-image: url("images/hero-background.jpeg");
+  background-size: cover;
+  filter: brightness(60%);
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  content: "";
+  z-index: -100;
+}
+
+/* Hero Section */
+
+.hero {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-text {
+  margin: 50px 0;
+  font-family: "Open Sans" sans-serif;
+  text-shadow: 1px 1px black;
+  letter-spacing: 0.08rem;
+  text-align: center;
+}
+
+.hero-text-large {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+.hero-text-small {
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+.hero-btns {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.btn {
+  width: 150px;
+  height: 40px;
+  border-radius: 30px;
+  color: whitesmoke;
+  border: none;
+  box-shadow: none;
+  cursor: pointer;
+}
+
+.btn-1 {
+  background: rgb(226, 110, 95);
+}
+
+.btn-1:hover {
+  background: rgb(147, 71, 61);
+  transition: 450ms;
+}
+
+.btn-2 {
+  background: transparent;
+  border: 3px solid whitesmoke;
+}
+
+.btn-2:hover {
+  background: rgba(250, 250, 250, 0.8);
+  color: black;
+  transition: 450ms;
+}
+
+.btn:active {
+  border: none;
+  box-shadow: inset 2px 2px 4px rgb(24, 24, 24);
+  transition: 50ms;
+}
+
+/* Do Section*/
+.do {
+  color: #111;
+  font-family: "Open Sans" sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: rgb(220, 220, 220);
+  padding-top: 50px;
+}
+
+.do-text {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 800px;
+  margin: auto;
+}
+
+.do-text {
+  padding: 20px;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.do-text-heading {
+  font-size: 1.2rem;
+}
+
+.do-text-subheading {
+  font-size: 1.5rem;
+}
+
+.btn-3 {
+  background: rgb(226, 110, 95);
+  border-radius: 0;
+}
+
+.btn-3:hover {
+  background: rgb(147, 71, 61);
+  transition: 550ms;
+}
+
+/* Services */
+.services-container {
+  color: rgb(30, 30, 126);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 25px;
+  align-items: center;
+  padding-top: 30px;
+  background: rgb(220, 220, 220);
+  padding-bottom: 50px;
+}
+
+.services-heading {
+  color: rgb(30, 30, 126);
+  text-align: center;
+  font-size: 1.75rem;
+  background: rgb(220, 220, 220);
+}
+
+.service {
+  display: flex;
+  flex-direction: column;
+  font-family: "Open Sans", sans-serif;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  background: rgba(250, 250, 250);
+  width: 80%;
+  height: 478px;
+  border-radius: 5px;
+}
+
+.service-image {
+  width: 80%;
+  margin: auto;
+}
+
+.service-text {
+  padding: 10px 10%;
+}
+
+.service-title {
+  margin: 10px 0 5px 0;
+}
+
+.service-line {
+  width: 80px;
+  border-bottom: 3px solid gray;
+  margin-bottom: 5px;
+}
+
+.service-desc {
+  color: #222;
+}
+
+/* Contact */
+.contact {
+  background: rgb(87, 87, 255);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  font-family: "Open Sans", sans-serif;
+}
+
+.contact-line {
+  border-bottom: 2px solid whitesmoke;
+  margin: 5px 0;
+  width: 60px;
+}
+
+.contact-desc {
+  margin: 20px 0;
+}
+
+.contact-entry {
+  margin: 15px 0;
+}
+
+footer {
+  height: 35px;
+  line-height: 35px;
+  background: rgb(24, 24, 24);
+  color: rgb(200, 200, 200);
+  padding-left: 20px;
+  font-size: 0.7rem;
+  text-align: center;
+}
+
+/* Media queries */
+@media screen and (min-width: 768px) {
+  .services-container {
+    display: flex;
+    flex-direction: row;
+    padding: 20px;
+  }
+}
