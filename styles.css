@@ -242,6 +242,14 @@ header a {
   font-family: "Open Sans", sans-serif;
 }
 
+.contact-fb {
+  text-align: center;
+}
+
+.contact-fb h2 {
+  margin-bottom: 10px;
+}
+
 .contact-line {
   border-bottom: 2px solid whitesmoke;
   margin: 5px 0;
@@ -274,5 +282,10 @@ footer {
     display: flex;
     flex-direction: row;
     padding: 15px;
+  }
+
+  .contact {
+    flex-direction: row;
+    justify-content: space-around;
   }
 }
