@@ -53,6 +53,7 @@ header a {
 .hero::before {
   background-image: url("images/hero-background.jpeg");
   background-size: cover;
+  background-position: center;
   filter: brightness(60%);
   position: absolute;
   top: 0;
