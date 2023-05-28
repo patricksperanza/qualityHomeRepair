@@ -49,6 +49,15 @@ header a {
 .header.active a {
   color: #222;
 }
+/* Hero Section */
+.hero {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
 
 .hero::before {
   background-image: url("images/hero-background.jpeg");
@@ -62,16 +71,6 @@ header a {
   right: 0;
   content: "";
   z-index: -100;
-}
-
-/* Hero Section */
-
-.hero {
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
 }
 
 .hero-text {
