@@ -237,8 +237,9 @@ header a {
   background: rgb(87, 87, 255);
   display: flex;
   flex-direction: column;
+  gap: 40px;
   align-items: center;
-  padding: 20px;
+  padding: 40px 20px;
   font-family: "Open Sans", sans-serif;
 }
 
@@ -246,8 +247,8 @@ header a {
   text-align: center;
 }
 
-.contact-fb h2 {
-  margin-bottom: 10px;
+iframe {
+  border-radius: 4px;
 }
 
 .contact-line {
@@ -286,6 +287,7 @@ footer {
 
   .contact {
     flex-direction: row;
+    gap: 0;
     justify-content: space-around;
   }
 }
