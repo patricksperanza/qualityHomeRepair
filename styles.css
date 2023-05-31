@@ -259,6 +259,7 @@ header a {
 
 .contact-fb {
   width: 100%;
+  height: 100%;
   text-align: left;
 }
 
@@ -307,6 +308,7 @@ footer {
 
   .contact {
     flex-direction: row;
+    align-items: flex-start;
     gap: 25px;
     justify-content: space-around;
   }
