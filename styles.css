@@ -243,14 +243,6 @@ header a {
   font-family: "Open Sans", sans-serif;
 }
 
-.contact-fb {
-  text-align: center;
-}
-
-iframe {
-  border-radius: 4px;
-}
-
 .contact-line {
   border-bottom: 2px solid whitesmoke;
   margin: 5px 0;
@@ -265,6 +257,35 @@ iframe {
   margin: 15px 0;
 }
 
+.contact-fb {
+  width: 100%;
+  text-align: left;
+}
+
+.contact-fb a {
+  text-decoration: none;
+}
+
+.contact-fb-text {
+  display: flex;
+  gap: 20px;
+  align-items: flex-end;
+}
+
+.contact-fb-text h4 {
+  text-decoration: none;
+  color: whitesmoke;
+}
+
+.fa-facebook-f {
+  margin: 10px 0;
+  font-size: 2rem;
+  color: whitesmoke;
+}
+
+.contact-fb-text:hover {
+  color: rgb(87, 87, 255);
+}
 footer {
   background: rgb(24, 24, 24);
   color: rgb(200, 200, 200);
@@ -272,7 +293,6 @@ footer {
   font-size: 0.7rem;
   text-align: center;
 }
-
 /* Media queries */
 @media screen and (min-width: 768px) {
   header {
@@ -287,7 +307,11 @@ footer {
 
   .contact {
     flex-direction: row;
-    gap: 0;
+    gap: 25px;
     justify-content: space-around;
+  }
+
+  .contact-text {
+    width: 100%;
   }
 }
